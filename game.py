@@ -12,10 +12,12 @@ def run_game():
         display_tie(user_play, comp_play)
     else:
         display_victory(winner)
+
+def run_match():
+    run_game()
     while another_match():
         run_game()
-        break
-    
+
 def display_match(play1, play2):
     print(f'{play1.description()} vs {play2.description()}   \n\n\t🤼 FIGHT!\n')
     
@@ -110,4 +112,4 @@ def another_match():
             continue
 
 if __name__ == '__main__':
-    run_game()
+    run_match()
