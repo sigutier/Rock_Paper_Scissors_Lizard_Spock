@@ -34,4 +34,6 @@ Hay que modelar las jugadas y su comparación. Usaremos clases para ello.
   * spock gana a piedra
   * piedra gana a tijera
   
+  <br>
+  
   ![](http://geekandsundry.com/wp-content/uploads/2015/05/Rock-Paper-Scissors-Lizard-Spock.jpg)
