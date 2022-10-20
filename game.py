@@ -26,7 +26,7 @@ def display_game():
     """
     Muestra el nombre del juego
     """
-    print('\n\n\t\tRock Paper Scissors\n\n')
+    print('\n\n\t\tRock Paper Scissors Lizard Spock\n\n')
 
 def get_user_play():
     """
