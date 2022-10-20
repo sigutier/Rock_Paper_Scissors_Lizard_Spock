@@ -3,9 +3,7 @@ import random
 from play import Lizard, Paper, Result, Rock, Scissors, Spock
 
 def run_game():
-    """
-    Arranca el juego
-    """
+    """ Inicia el juego """
     display_game()
     user_play = get_user_play()
     comp_play = random_play()
@@ -23,15 +21,11 @@ def display_match(play1, play2):
     print(f'{play1.description()} vs {play2.description()}   \n\n\t🤼 FIGHT!\n')
     
 def display_game():
-    """
-    Muestra el nombre del juego
-    """
+    """ Muestra el nombre del juego """
     print('\n\n\t\tRock Paper Scissors Lizard Spock\n\n')
 
 def get_user_play():
-    """
-    Le pregunta al usuario qué quiere jugar y lo devuelve
-    """
+    """ Le pregunta al usuario qué quiere jugar y lo devuelve """
     res = get_user_response()
     if res == 1:
         return Rock()
@@ -59,7 +53,7 @@ def get_user_response():
         print("5. Spock 🖖")
     
         raw = input("Enter 1, 2, 3, 4 or 5: \n")
-        # validar raw
+
         raw = raw.strip()
         if raw == "1":
             response = 1
@@ -81,15 +75,11 @@ def get_user_response():
     return response
 
 def random_play():
-    """
-    Selecciona una jugada al azar para competir con el usuario
-    """
+    """ Selecciona una jugada al azar para competir con el usuario """
     return choice([Paper(), Rock(), Scissors(), Lizard(), Spock()])
 
 def get_winner(play1, play2):
-    """
-    Obtiene el vencedor o None si hay empate
-    """
+    """ Obtiene el ganador o None si hay empate """
     winner = None
     result = play1.compare(play2)
     if result == Result.WINS:
@@ -102,15 +92,11 @@ def get_winner(play1, play2):
 
 
 def display_tie(play1, play2):
-    """
-    Imprime que ha habido un empate
-    """
+    """ Imprime que ha habido un empate """
     print(f'Tie between {play1.description()} & {play2.description()}')
 
 def display_victory(winner):
-    """
-    Muestra que winner ha ganado
-    """
+    """ Muestra que winner ha ganado """
     print(f'Has won {winner.description()} ! ! !')
 
 def another_match():

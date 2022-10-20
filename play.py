@@ -12,21 +12,8 @@ class Play(object):
         pass
 
     def compare(self, otherPlay):
-        """
-        Se compara con la otra jugada y devuelve un Result de la comparación:
-            tijeras gana a papel
-            papel gana a piedra
-            piedra gana a lagarto
-            lagarto gana a spock
-            spock gana a tijeras
-            tijeras gana a lagarto
-            lagarto gana a papel
-            papel gana a spock
-            spock gana a piedra
-            piedra gana a tijera
-        """
+        """ Se compara con la otra jugada y devuelve un Result de la comparación """
         pass
-
 
 class Paper(Play):
     def description(self):
