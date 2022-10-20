@@ -29,7 +29,6 @@ class Paper(Play):
             result = Result.EQUAL
         return result
 
-
 class Scissors(Play):
     def description(self):
         return "Scissors ✂️ "
@@ -41,7 +40,6 @@ class Scissors(Play):
             return Result.WINS
         else:
             return Result.LOSES
-
 
 class Rock(Play):
     def description(self):
@@ -55,9 +53,7 @@ class Rock(Play):
             result = Result.LOSES
         else:
             result = Result.EQUAL
-        return result
-
-
+        return resul
 class Lizard(Play):
     def description(self):
         return "Lizard 🦎 "
