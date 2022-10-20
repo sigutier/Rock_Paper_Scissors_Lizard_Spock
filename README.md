@@ -1,6 +1,12 @@
-# Rock_Paper_Scissors_Lizard_Spock
+<h1 align="center">
+	Rock🪨 Paper🧻 Scissors✂️ Lizard🦎 Spock🖖
+</h1>
 
-Esquema del juego:
+<p align="center">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/sigutier/Rock_Paper_Scissors_Lizard_Spock?style=plastic">
+ </p>
+
+## Esquema del juego:
 
 1. Se le pide al usuario que elija de entre unas opciones (piedra, papel, tijera, lagarto, spock)
 1. Creamos una jugada a partir de lo que haya elegido el usuario
