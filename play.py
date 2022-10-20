@@ -53,7 +53,8 @@ class Rock(Play):
             result = Result.LOSES
         else:
             result = Result.EQUAL
-        return resul
+        return result
+
 class Lizard(Play):
     def description(self):
         return "Lizard 🦎 "
