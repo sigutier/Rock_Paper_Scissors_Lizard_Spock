@@ -1,5 +1,4 @@
 from random import choice
-import random
 from play import Lizard, Paper, Result, Rock, Scissors, Spock
 
 def run_game():
@@ -53,7 +52,6 @@ def get_user_response():
         print("5. Spock 🖖")
     
         raw = input("Enter 1, 2, 3, 4 or 5: \n")
-
         raw = raw.strip()
         if raw == "1":
             response = 1
@@ -90,7 +88,6 @@ def get_winner(play1, play2):
         winner = None
     return winner
 
-
 def display_tie(play1, play2):
     """ Imprime que ha habido un empate """
     print(f'Tie between {play1.description()} & {play2.description()}')
@@ -106,7 +103,7 @@ def another_match():
             return True
         elif play_again.lower() == "n":
             goodbye = ["¿Eres un gallina, McFly?", "¡Cobarde!", "Bye, bye perdedor"]
-            print(random.choice(goodbye))
+            print(choice(goodbye))
             return False
         else:
             print("Error. You must enter 'y' or 'n'.")
